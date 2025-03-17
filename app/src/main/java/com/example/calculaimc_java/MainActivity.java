@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView nrResultado;
     private Button btCalcular;
-//    private Button btLimpar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         nrResultado = findViewById(R.id.nrResultado);
 
         btCalcular = findViewById(R.id.btCalcular);
-//        btLimpar = findViewById(R.id.btLimpar);
 
         btCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,13 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-//        btLimpar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                btLimparOnClick();
-//            }
-//        });
     }// Fim do metodo onClick
 
     private void btCalcularOnClick() {
